@@ -128,6 +128,8 @@ public class ApiConfig {
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
         String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        //视频源地址
+        apiUrl="http://饭太硬.top/tv";
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
